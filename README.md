@@ -17,5 +17,8 @@ optional arguments: <br/>
 <br/>
 <br/>
 Example: <br/>
+<pre>python wordref.py bonjour</pre>
+<br/>
+Output:<br/>
 <br/>
 ![My image](github-cap.png)
