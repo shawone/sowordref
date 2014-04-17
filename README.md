@@ -22,3 +22,22 @@ Example: <br/>
 Output:<br/>
 <br/>
 ![My image](github-cap.png)
+
+<br/>
+Example: <br/>
+<pre>python wordref.py thanks -i en -o ja</pre>
+<br/>
+Output:<br/>
+<br/>
+![My image](github-en-ja.png)
+<br/>
+<br/>
+<br/>
+
+Installation
+============
+<pre>
+sudo cp wordref.py /usr/bin/translate
+translate -h
+translate bonjour
+</pre>
