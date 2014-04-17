@@ -47,4 +47,4 @@ source: http://www.wordreference.com
 (END)
 </pre>
 
-![My image](Szczork.github.com/sowordref/github-cap.png)
+![My image](github-cap.png)
