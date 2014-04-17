@@ -2,7 +2,10 @@
 # https://github.com/Szczork
 #
 # Wordreference parsing
-#!/usr/bin/env python
+#! /bin/sh
+""":"
+exec python $0 ${1+"$@"}
+"""
 
 import urllib2
 import contextlib
