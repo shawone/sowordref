@@ -7,7 +7,8 @@ wordreference translation in your shell
 usage
 =========
 
-usage: wordref.py [-h] [-i LANGSOURCE] [-o LANGDESTINATION] word<br/>
+usage: <br/>
+<pre>wordref.py [-h] [-i LANGSOURCE] [-o LANGDESTINATION] word</pre>
 <br/>
 optional arguments: <br/> 
   -i LANGSOURCE  / -o LANGDESTINATION : <br/>
@@ -18,10 +19,12 @@ optional arguments: <br/>
 Example: <br/>
 <br/>
 <pre>
+$> python wordref.py bonjour
+
 ========= Wordreference Translation of bonjour: fr => en  ===========
 
-bonjour</span>  interj  (terme de salutation pendant la journée)hello interj interj interj
-bonjour  nm  (salutation)hello n npl 
+bonjour interj  (terme de salutation pendant la journée)hello interj interj interj
+bonjour  nm  (salutation)hello n npl 
 Bien le bonjour !  interj Well hello! n 
 bonjour à tous  Hello everybody (or: everyone) expr expr expr
 Bonjour la galère !  interj what a pain, what a drag interj 
