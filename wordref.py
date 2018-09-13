@@ -1,5 +1,5 @@
 # Author: Nicolas Chevalier
-# https://github.com/Szczork
+# https://github.com/shawone/sowordref.git
 #
 # Wordreference parsing
 #! /bin/sh
