@@ -21,15 +21,18 @@ Example: <br/>
 <br/>
 Output:<br/>
 <br/>
-![My image](github-cap.png)
-
+<p align="center">
+<img width="800" height="400" src="https://raw.githubusercontent.com/shawone/sowordref/master/github-cap.png">
+<p/>
 <br/>
 Example: <br/>
 <pre>python wordref.py thanks -i en -o ja</pre>
 <br/>
 Output:<br/>
 <br/>
-![My image](github-en-ja.png)
+<p align="center">
+  <img width="800" height="200" src="https://raw.githubusercontent.com/shawone/sowordref/master/github-en-ja.png">
+<p/>
 <br/>
 <br/>
 <br/>
