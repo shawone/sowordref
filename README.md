@@ -40,7 +40,7 @@ Output:<br/>
 Installation
 ============
 <pre>
-sudo cp wordref.py /usr/bin/translate
+sudo cp wordref.py /usr/local/bin/translate
 translate -h
 translate bonjour
 </pre>
