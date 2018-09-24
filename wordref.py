@@ -30,6 +30,7 @@ class MyHTMLParser(HTMLParser):
     flagnewline = None
     flagspan = None
     splitfirstword = None
+    retline = None
     listeline = []
 
     def __init__(self, websrc):
@@ -59,6 +60,9 @@ class MyHTMLParser(HTMLParser):
             self.flagspan = None
         if tag == 'tr':
             for k in self.listeline:
+                if self.retline == True:
+                    sys.stdout.write('\n')
+                    self.retline = False
                 if len(k) != 2:
                     sys.stdout.write(k)
                 if len(k) == 2:
@@ -72,7 +76,8 @@ class MyHTMLParser(HTMLParser):
         if self.flagtranslation == True and self.flagabbr == None:
             if self.flagstrong == True:
                 self.splitfirstword = False
-                self.listeline.append("\n\033[31m"+data+"\033[0m ")
+                self.listeline.append("\033[31m"+data+"\033[0m ")
+                self.retline = True
             else:
                 if data.startswith("Next"):
                     endprogram(False)
