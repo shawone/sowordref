@@ -28,6 +28,8 @@ class MyHTMLParser(HTMLParser):
     flagstrong = None
     flagabbr = None
     flagnewline = None
+    flagspan = None
+    splitfirstword = None
     listeline = []
 
     def __init__(self, websrc):
@@ -45,12 +47,16 @@ class MyHTMLParser(HTMLParser):
         
         if tag == 'em':
             self.flagabbr = True
+        if tag == 'span':
+            self.flagspan = True
         if tag == 'strong':
             self.flagstrong = True
 
     def handle_endtag(self, tag):
         if tag == 'em':
             self.flagabbr = None
+        if tag == 'span':
+            self.flagspan = None
         if tag == 'tr':
             for k in self.listeline:
                 if len(k) != 2:
@@ -65,13 +71,16 @@ class MyHTMLParser(HTMLParser):
     def handle_data(self, data):
         if self.flagtranslation == True and self.flagabbr == None:
             if self.flagstrong == True:
+                self.splitfirstword = False
                 self.listeline.append("\n\033[31m"+data+"\033[0m ")
             else:
                 if data.startswith("Next"):
                     endprogram(False)
                 self.listeline.append(data)
         if self.flagabbr == True:
-            self.listeline.append("\033[34m"+data+"\033[0m ")
+            if self.flagspan == True and self.splitfirstword == False:
+                self.listeline.append("\033[34m"+data+"\033[0m ")
+                self.splitfirstword = True
 
 def endprogram(state):
     if state == False:
