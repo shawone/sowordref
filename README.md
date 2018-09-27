@@ -16,22 +16,8 @@ optional arguments: <br/>
 <br/>
 <br/>
 <br/>
-Example: <br/>
-<pre>python wordref.py bonjour</pre>
-<br/>
-Output:<br/>
-<br/>
 <p align="center">
-<img width="800" height="400" src="https://raw.githubusercontent.com/shawone/sowordref/master/github-cap.png">
-<p/>
-<br/>
-Example: <br/>
-<pre>python wordref.py thanks -i en -o ja</pre>
-<br/>
-Output:<br/>
-<br/>
-<p align="center">
-  <img width="800" height="200" src="https://raw.githubusercontent.com/shawone/sowordref/master/github-en-ja.png">
+<img width="800" height="400" src="https://raw.githubusercontent.com/shawone/sowordref/master/screenshot.png">
 <p/>
 <br/>
 <br/>
